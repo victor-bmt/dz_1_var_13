@@ -5,8 +5,7 @@
 #include <stdlib.h>
 #include "main.h"
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
 	if (argc != 3) {
 		printf("Incorrect input!\nYou should enter \"./a.out (file_name) (threshold value)\". Try again.\n");
 		return 0;
