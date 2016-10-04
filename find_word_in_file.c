@@ -31,7 +31,7 @@ uint32_t find_word_in_file(const uint8_t *word, const uint8_t *file_name, const 
 					fclose(fp);
 					return num;
 				}
-	}
+		}
 
 	ch = getc(fp);
 	if (++i == end) {
@@ -45,7 +45,7 @@ uint32_t find_word_in_file(const uint8_t *word, const uint8_t *file_name, const 
 		if (++i == end) {
 			fclose(fp);
 			return num;
-	}
+		}
 	
 		while (!((isspace(buf) || ispunct(buf)) && (ch == word[0]))) {
 			buf = ch;
